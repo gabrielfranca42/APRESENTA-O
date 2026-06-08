@@ -57,16 +57,16 @@ const slides = [
           </div>
           <div className="image-grid">
              <div className="slide-image-container">
-               <img src="/login.jpg" alt="Tela de Login" className="slide-image" onError={(e) => { e.target.src = 'https://via.placeholder.com/300x600/000000/00FFFF?text=Login'; }} />
+               <img src="./login.jpg" alt="Tela de Login" className="slide-image" onError={(e) => { e.target.src = 'https://via.placeholder.com/300x600/000000/00FFFF?text=Login'; }} />
              </div>
              <div className="slide-image-container">
-               <img src="/painel.jpg" alt="Painel do Aluno" className="slide-image" onError={(e) => { e.target.src = 'https://via.placeholder.com/300x600/000000/00FFFF?text=Painel'; }} />
+               <img src="./painel.jpg" alt="Painel do Aluno" className="slide-image" onError={(e) => { e.target.src = 'https://via.placeholder.com/300x600/000000/00FFFF?text=Painel'; }} />
              </div>
              <div className="slide-image-container">
-               <img src="/subir.jpg" alt="Upload de Material" className="slide-image" onError={(e) => { e.target.src = 'https://via.placeholder.com/300x600/000000/00FFFF?text=Upload'; }} />
+               <img src="./subir.jpg" alt="Upload de Material" className="slide-image" onError={(e) => { e.target.src = 'https://via.placeholder.com/300x600/000000/00FFFF?text=Upload'; }} />
              </div>
              <div className="slide-image-container">
-               <img src="/perfil.jpg" alt="Perfil do Aluno" className="slide-image" onError={(e) => { e.target.src = 'https://via.placeholder.com/300x600/000000/00FFFF?text=Perfil'; }} />
+               <img src="./perfil.jpg" alt="Perfil do Aluno" className="slide-image" onError={(e) => { e.target.src = 'https://via.placeholder.com/300x600/000000/00FFFF?text=Perfil'; }} />
              </div>
           </div>
         </div>
