@@ -14,7 +14,8 @@ import {
   FileCheck2,
   Clock,
   Award,
-  Users
+  Users,
+  X
 } from 'lucide-react';
 
 const Github = ({ size = 16 }) => (
@@ -24,7 +25,7 @@ const Github = ({ size = 16 }) => (
 );
 import './index.css';
 
-const slides = [
+const getSlides = (openLightbox) => [
   // SLIDE 1: CAPA
   {
     id: 1,
@@ -143,16 +144,16 @@ const slides = [
             </div>
           </div>
           <div className="image-grid animate-item delay-3">
-             <div className="slide-image-container">
+             <div className="slide-image-container" onClick={() => openLightbox(0)} style={{ cursor: 'pointer' }}>
                <img src="./login.jpg" alt="Login do App" className="slide-image" onError={(e) => { e.target.src = 'https://via.placeholder.com/300x600/e0f2fe/005A9C?text=Login'; }} />
              </div>
-             <div className="slide-image-container">
+             <div className="slide-image-container" onClick={() => openLightbox(1)} style={{ cursor: 'pointer' }}>
                <img src="./painel.jpg" alt="Painel do App" className="slide-image" onError={(e) => { e.target.src = 'https://via.placeholder.com/300x600/e0f2fe/005A9C?text=Painel'; }} />
              </div>
-             <div className="slide-image-container">
+             <div className="slide-image-container" onClick={() => openLightbox(2)} style={{ cursor: 'pointer' }}>
                <img src="./subir.jpg" alt="Upload no App" className="slide-image" onError={(e) => { e.target.src = 'https://via.placeholder.com/300x600/e0f2fe/005A9C?text=Upload'; }} />
              </div>
-             <div className="slide-image-container">
+             <div className="slide-image-container" onClick={() => openLightbox(3)} style={{ cursor: 'pointer' }}>
                <img src="./perfil.jpg" alt="Perfil do App" className="slide-image" onError={(e) => { e.target.src = 'https://via.placeholder.com/300x600/e0f2fe/005A9C?text=Perfil'; }} />
              </div>
           </div>
@@ -251,45 +252,45 @@ const slides = [
         
         <div className="animate-item delay-3" style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '2rem', width: '100%' }}>
           
-          <div className="feature-card" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '1.5rem', width: '200px' }}>
+          <a href="https://github.com/mbalbuquerque" target="_blank" rel="noreferrer" className="feature-card" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '1.5rem', width: '200px', textDecoration: 'none' }}>
             <img src="./marcelo.jpg" alt="Marcelo" style={{ width: '100px', height: '100px', borderRadius: '50%', objectFit: 'cover', marginBottom: '1rem', border: '3px solid var(--primary-blue)' }} onError={(e) => { e.target.src = 'https://via.placeholder.com/100/e0f2fe/005A9C?text=M'; }} />
-            <h3 style={{ margin: '0 0 0.5rem 0', fontSize: '1.1rem', textAlign: 'center', justifyContent: 'center' }}>Marcelo</h3>
-            <a href="https://github.com/mbalbuquerque" target="_blank" rel="noreferrer" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', textDecoration: 'none', color: 'var(--text-secondary)', fontSize: '0.9rem' }}>
+            <h3 style={{ margin: '0 0 0.5rem 0', fontSize: '1.1rem', textAlign: 'center', justifyContent: 'center', color: 'var(--text-primary)' }}>Marcelo</h3>
+            <span style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-secondary)', fontSize: '0.9rem' }}>
               <Github size={16} /> @mbalbuquerque
-            </a>
-          </div>
+            </span>
+          </a>
 
-          <div className="feature-card" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '1.5rem', width: '200px' }}>
+          <a href="https://github.com/CaioAlvescvl" target="_blank" rel="noreferrer" className="feature-card" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '1.5rem', width: '200px', textDecoration: 'none' }}>
             <img src="./caio.jpg" alt="Caio" style={{ width: '100px', height: '100px', borderRadius: '50%', objectFit: 'cover', marginBottom: '1rem', border: '3px solid var(--primary-blue)' }} onError={(e) => { e.target.src = 'https://via.placeholder.com/100/e0f2fe/005A9C?text=C'; }} />
-            <h3 style={{ margin: '0 0 0.5rem 0', fontSize: '1.1rem', textAlign: 'center', justifyContent: 'center' }}>Caio</h3>
-            <a href="https://github.com/CaioAlvescvl" target="_blank" rel="noreferrer" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', textDecoration: 'none', color: 'var(--text-secondary)', fontSize: '0.9rem' }}>
+            <h3 style={{ margin: '0 0 0.5rem 0', fontSize: '1.1rem', textAlign: 'center', justifyContent: 'center', color: 'var(--text-primary)' }}>Caio</h3>
+            <span style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-secondary)', fontSize: '0.9rem' }}>
               <Github size={16} /> @CaioAlvescvl
-            </a>
-          </div>
+            </span>
+          </a>
 
-          <div className="feature-card" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '1.5rem', width: '200px' }}>
+          <a href="https://github.com/Wendel-Brasiliano" target="_blank" rel="noreferrer" className="feature-card" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '1.5rem', width: '200px', textDecoration: 'none' }}>
             <img src="./wendel.jpg" alt="Wendel" style={{ width: '100px', height: '100px', borderRadius: '50%', objectFit: 'cover', marginBottom: '1rem', border: '3px solid var(--primary-blue)' }} onError={(e) => { e.target.src = 'https://via.placeholder.com/100/e0f2fe/005A9C?text=W'; }} />
-            <h3 style={{ margin: '0 0 0.5rem 0', fontSize: '1.1rem', textAlign: 'center', justifyContent: 'center' }}>Wendel</h3>
-            <a href="https://github.com/Wendel-Brasiliano" target="_blank" rel="noreferrer" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', textDecoration: 'none', color: 'var(--text-secondary)', fontSize: '0.9rem' }}>
+            <h3 style={{ margin: '0 0 0.5rem 0', fontSize: '1.1rem', textAlign: 'center', justifyContent: 'center', color: 'var(--text-primary)' }}>Wendel</h3>
+            <span style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-secondary)', fontSize: '0.9rem' }}>
               <Github size={16} /> @Wendel-Brasiliano
-            </a>
-          </div>
+            </span>
+          </a>
 
-          <div className="feature-card" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '1.5rem', width: '200px' }}>
+          <a href="https://github.com/Morganabarbs" target="_blank" rel="noreferrer" className="feature-card" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '1.5rem', width: '200px', textDecoration: 'none' }}>
             <img src="./morgana.jpg" alt="Morgana" style={{ width: '100px', height: '100px', borderRadius: '50%', objectFit: 'cover', marginBottom: '1rem', border: '3px solid var(--primary-blue)' }} onError={(e) => { e.target.src = 'https://via.placeholder.com/100/e0f2fe/005A9C?text=Mo'; }} />
-            <h3 style={{ margin: '0 0 0.5rem 0', fontSize: '1.1rem', textAlign: 'center', justifyContent: 'center' }}>Morgana</h3>
-            <a href="https://github.com/Morganabarbs" target="_blank" rel="noreferrer" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', textDecoration: 'none', color: 'var(--text-secondary)', fontSize: '0.9rem' }}>
+            <h3 style={{ margin: '0 0 0.5rem 0', fontSize: '1.1rem', textAlign: 'center', justifyContent: 'center', color: 'var(--text-primary)' }}>Morgana</h3>
+            <span style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-secondary)', fontSize: '0.9rem' }}>
               <Github size={16} /> @Morganabarbs
-            </a>
-          </div>
+            </span>
+          </a>
 
-          <div className="feature-card" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '1.5rem', width: '200px' }}>
+          <a href="https://github.com/gabrielfranca42" target="_blank" rel="noreferrer" className="feature-card" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '1.5rem', width: '200px', textDecoration: 'none' }}>
             <img src="./gabriel.png" alt="Gabriel" style={{ width: '100px', height: '100px', borderRadius: '50%', objectFit: 'cover', marginBottom: '1rem', border: '3px solid var(--accent-orange)' }} onError={(e) => { e.target.src = 'https://via.placeholder.com/100/e0f2fe/F28C28?text=G'; }} />
-            <h3 style={{ margin: '0 0 0.5rem 0', fontSize: '1.1rem', textAlign: 'center', justifyContent: 'center' }}>Gabriel</h3>
-            <a href="https://github.com/gabrielfranca42" target="_blank" rel="noreferrer" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', textDecoration: 'none', color: 'var(--text-secondary)', fontSize: '0.9rem' }}>
+            <h3 style={{ margin: '0 0 0.5rem 0', fontSize: '1.1rem', textAlign: 'center', justifyContent: 'center', color: 'var(--text-primary)' }}>Gabriel</h3>
+            <span style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-secondary)', fontSize: '0.9rem' }}>
               <Github size={16} /> @gabrielfranca42
-            </a>
-          </div>
+            </span>
+          </a>
 
         </div>
       </div>
@@ -299,6 +300,16 @@ const slides = [
 
 function App() {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [lightboxIndex, setLightboxIndex] = useState(null);
+
+  const lightboxImages = [
+    { src: './login.jpg', alt: 'Login do App', fallback: 'https://via.placeholder.com/300x600/e0f2fe/005A9C?text=Login' },
+    { src: './painel.jpg', alt: 'Painel do App', fallback: 'https://via.placeholder.com/300x600/e0f2fe/005A9C?text=Painel' },
+    { src: './subir.jpg', alt: 'Upload no App', fallback: 'https://via.placeholder.com/300x600/e0f2fe/005A9C?text=Upload' },
+    { src: './perfil.jpg', alt: 'Perfil do App', fallback: 'https://via.placeholder.com/300x600/e0f2fe/005A9C?text=Perfil' }
+  ];
+
+  const slides = getSlides(setLightboxIndex);
 
   const nextSlide = () => {
     if (currentSlide < slides.length - 1) {
@@ -314,15 +325,31 @@ function App() {
 
   useEffect(() => {
     const handleKeyDown = (e) => {
-      if (e.key === 'ArrowRight' || e.key === 'Space') {
-        nextSlide();
-      } else if (e.key === 'ArrowLeft') {
-        prevSlide();
+      if (lightboxIndex !== null) {
+        if (e.key === 'ArrowRight') {
+          setLightboxIndex(prev => prev < lightboxImages.length - 1 ? prev + 1 : prev);
+        } else if (e.key === 'ArrowLeft') {
+          setLightboxIndex(prev => prev > 0 ? prev - 1 : prev);
+        } else if (e.key === 'Escape') {
+          setLightboxIndex(null);
+        }
+      } else {
+        if (e.key === 'ArrowRight' || e.key === 'Space') {
+          nextSlide();
+        } else if (e.key === 'ArrowLeft') {
+          prevSlide();
+        } else if (e.key === 'ArrowDown') {
+          const activeSlideContent = document.querySelector('.slide.active .slide-content');
+          if (activeSlideContent) activeSlideContent.scrollBy({ top: 100, behavior: 'smooth' });
+        } else if (e.key === 'ArrowUp') {
+          const activeSlideContent = document.querySelector('.slide.active .slide-content');
+          if (activeSlideContent) activeSlideContent.scrollBy({ top: -100, behavior: 'smooth' });
+        }
       }
     };
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [currentSlide]);
+  }, [currentSlide, lightboxIndex, lightboxImages.length]);
 
   return (
     <>
@@ -348,7 +375,7 @@ function App() {
           ))}
         </div>
 
-        <div className="controls">
+        <div className="controls" style={{ display: 'none' }}>
           <button 
             className="control-btn" 
             onClick={prevSlide} 
@@ -358,7 +385,7 @@ function App() {
             <ChevronLeft size={24} />
           </button>
           
-          <div className="progress-dots">
+          <div className="progress-dots" style={{ display: 'none' }}>
             {slides.map((_, index) => (
               <div 
                 key={index} 
@@ -378,6 +405,39 @@ function App() {
           </button>
         </div>
       </div>
+
+      {/* Lightbox Modal */}
+      {lightboxIndex !== null && (
+        <div className="lightbox-overlay" onClick={() => setLightboxIndex(null)}>
+          <button className="lightbox-close" onClick={() => setLightboxIndex(null)}>
+            <X size={32} />
+          </button>
+          
+          <button 
+            className="lightbox-nav left" 
+            onClick={(e) => { e.stopPropagation(); setLightboxIndex(prev => prev > 0 ? prev - 1 : prev); }}
+            disabled={lightboxIndex === 0}
+          >
+            <ChevronLeft size={48} />
+          </button>
+
+          <div className="lightbox-content" onClick={(e) => e.stopPropagation()}>
+            <img 
+              src={lightboxImages[lightboxIndex].src} 
+              alt={lightboxImages[lightboxIndex].alt}
+              onError={(e) => { e.target.src = lightboxImages[lightboxIndex].fallback; }}
+            />
+          </div>
+
+          <button 
+            className="lightbox-nav right" 
+            onClick={(e) => { e.stopPropagation(); setLightboxIndex(prev => prev < lightboxImages.length - 1 ? prev + 1 : prev); }}
+            disabled={lightboxIndex === lightboxImages.length - 1}
+          >
+            <ChevronRight size={48} />
+          </button>
+        </div>
+      )}
     </>
   );
 }
