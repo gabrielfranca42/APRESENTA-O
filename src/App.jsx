@@ -60,16 +60,16 @@ const getSlides = (openLightbox) => [
         <div className="split-layout">
           <div>
             <p className="slide-text animate-item delay-2" style={{ marginBottom: '2.5rem' }}>
-              Atualmente, a validação de horas complementares envolve entrega de papéis, longas filas na coordenação e dificuldade no acompanhamento. Isso toma tempo de quem ensina e de quem aprende.
+              Atualmente, a validação de horas complementares envolve o envio de certificados via e-mail, o que dificulta o acompanhamento e sobrecarrega a coordenação. Isso toma tempo de quem ensina e de quem aprende.
             </p>
             <div className="features-grid">
               <div className="feature-card animate-item delay-3">
-                <h3><FileCheck2 size={20} color="var(--accent-orange)" /> Extravio de Documentos</h3>
-                <p>Certificados físicos podem ser perdidos facilmente entre a secretaria e a coordenação.</p>
+                <h3><FileCheck2 size={20} color="var(--accent-orange)" /> Desorganização de E-mails</h3>
+                <p>Certificados podem se perder facilmente na caixa de entrada lotada da coordenação.</p>
               </div>
               <div className="feature-card animate-item delay-4">
                 <h3><Layers size={20} color="var(--accent-orange)" /> Acúmulo no Fim do Semestre</h3>
-                <p>Grande volume de horas para validar simultaneamente sobrecarregando a equipe.</p>
+                <p>Grande volume de e-mails para validar simultaneamente, sobrecarregando a equipe.</p>
               </div>
             </div>
           </div>
