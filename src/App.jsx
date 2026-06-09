@@ -38,7 +38,7 @@ const getSlides = (openLightbox) => [
         <div className="animate-item delay-2 hero-subtitle-container">
           SENAC | SISTEMA DE GESTÃO ACADÊMICA
         </div>
-        <h1 className="animate-item delay-3 hero-title">Valida<span>UP</span></h1>
+        <h1 className="animate-item delay-3 hero-title"><span>UP</span>acadêmico</h1>
         <p className="animate-item delay-4 slide-text" style={{ maxWidth: '700px', margin: '1rem auto 0', fontSize: '1.25rem' }}>
           O ecossistema definitivo para cadastro, gestão e aprovação de certificados.
           Conectando alunos e coordenadores de forma inteligente.
@@ -81,14 +81,14 @@ const getSlides = (openLightbox) => [
       </div>
     )
   },
-  // SLIDE 3: A SOLUÇÃO VALIDAUP
+  // SLIDE 3: A SOLUÇÃO UPACADÊMICO
   {
     id: 3,
     type: 'split',
     content: (
       <div className="slide-content">
         <div className="animate-item delay-1">
-          <h2 className="slide-title"><ShieldCheck size={32} /> A Solução: ValidaUP</h2>
+          <h2 className="slide-title"><ShieldCheck size={32} /> A Solução: UPacadêmico</h2>
           <p className="slide-subtitle">Digital, Ágil e Transparente</p>
         </div>
         
@@ -207,7 +207,7 @@ const getSlides = (openLightbox) => [
     content: (
       <div className="slide-content" style={{ alignItems: 'center', justifyContent: 'center', textAlign: 'center' }}>
         <h2 className="slide-title animate-item delay-1" style={{ border: 'none', justifyContent: 'center', paddingBottom: 0 }}>Resultados Esperados</h2>
-        <p className="slide-subtitle animate-item delay-2" style={{ marginBottom: '2rem' }}>O impacto do ValidaUP no Senac</p>
+        <p className="slide-subtitle animate-item delay-2" style={{ marginBottom: '2rem' }}>O impacto do UPacadêmico no Senac</p>
         
         <div className="features-grid" style={{ width: '100%', maxWidth: '1000px', gap: '1.5rem' }}>
           <div className="feature-card animate-item delay-3" style={{ textAlign: 'center', padding: '2rem 1.5rem' }}>
@@ -237,7 +237,7 @@ const getSlides = (openLightbox) => [
         
         <div className="animate-item delay-6" style={{ marginTop: '2rem' }}>
             <h2 style={{ fontSize: '2.5rem', color: 'var(--primary-blue-dark)' }}>Obrigado!</h2>
-            <p style={{ color: 'var(--text-secondary)' }}>ValidaUP - Senac 2026</p>
+            <p style={{ color: 'var(--text-secondary)' }}>UPacadêmico - Senac 2026</p>
         </div>
       </div>
     )
@@ -249,7 +249,7 @@ const getSlides = (openLightbox) => [
     content: (
       <div className="slide-content" style={{ alignItems: 'center', justifyContent: 'flex-start', textAlign: 'center' }}>
         <h2 className="slide-title animate-item delay-1" style={{ border: 'none', justifyContent: 'center', paddingBottom: 0 }}>Nossa Equipe</h2>
-        <p className="slide-subtitle animate-item delay-2" style={{ marginBottom: '2rem' }}>Os desenvolvedores por trás do ValidaUP</p>
+        <p className="slide-subtitle animate-item delay-2" style={{ marginBottom: '2rem' }}>Os desenvolvedores por trás do UPacadêmico</p>
         
         <div className="animate-item delay-3" style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '2rem', width: '100%' }}>
           
