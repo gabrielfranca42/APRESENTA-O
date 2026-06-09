@@ -16,6 +16,12 @@ import {
   Award,
   Users
 } from 'lucide-react';
+
+const Github = ({ size = 16 }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+  </svg>
+);
 import './index.css';
 
 const slides = [
@@ -230,6 +236,61 @@ const slides = [
         <div className="animate-item delay-6" style={{ marginTop: '3rem' }}>
             <h2 style={{ fontSize: '2.5rem', color: 'var(--primary-blue-dark)' }}>Obrigado!</h2>
             <p style={{ color: 'var(--text-secondary)' }}>ValidaUP - Senac 2026</p>
+        </div>
+      </div>
+    )
+  },
+  // SLIDE 7: EQUIPE
+  {
+    id: 7,
+    type: 'team',
+    content: (
+      <div className="slide-content" style={{ alignItems: 'center', justifyContent: 'flex-start', textAlign: 'center' }}>
+        <h2 className="slide-title animate-item delay-1" style={{ border: 'none', justifyContent: 'center', paddingBottom: 0 }}>Nossa Equipe</h2>
+        <p className="slide-subtitle animate-item delay-2" style={{ marginBottom: '2rem' }}>Os desenvolvedores por trás do ValidaUP</p>
+        
+        <div className="animate-item delay-3" style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '2rem', width: '100%' }}>
+          
+          <div className="feature-card" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '1.5rem', width: '200px' }}>
+            <img src="./marcelo.jpg" alt="Marcelo" style={{ width: '100px', height: '100px', borderRadius: '50%', objectFit: 'cover', marginBottom: '1rem', border: '3px solid var(--primary-blue)' }} onError={(e) => { e.target.src = 'https://via.placeholder.com/100/e0f2fe/005A9C?text=M'; }} />
+            <h3 style={{ margin: '0 0 0.5rem 0', fontSize: '1.1rem', textAlign: 'center', justifyContent: 'center' }}>Marcelo</h3>
+            <a href="https://github.com/mbalbuquerque" target="_blank" rel="noreferrer" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', textDecoration: 'none', color: 'var(--text-secondary)', fontSize: '0.9rem' }}>
+              <Github size={16} /> @mbalbuquerque
+            </a>
+          </div>
+
+          <div className="feature-card" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '1.5rem', width: '200px' }}>
+            <img src="./caio.jpg" alt="Caio" style={{ width: '100px', height: '100px', borderRadius: '50%', objectFit: 'cover', marginBottom: '1rem', border: '3px solid var(--primary-blue)' }} onError={(e) => { e.target.src = 'https://via.placeholder.com/100/e0f2fe/005A9C?text=C'; }} />
+            <h3 style={{ margin: '0 0 0.5rem 0', fontSize: '1.1rem', textAlign: 'center', justifyContent: 'center' }}>Caio</h3>
+            <a href="https://github.com/CaioAlvescvl" target="_blank" rel="noreferrer" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', textDecoration: 'none', color: 'var(--text-secondary)', fontSize: '0.9rem' }}>
+              <Github size={16} /> @CaioAlvescvl
+            </a>
+          </div>
+
+          <div className="feature-card" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '1.5rem', width: '200px' }}>
+            <img src="./wendel.jpg" alt="Wendel" style={{ width: '100px', height: '100px', borderRadius: '50%', objectFit: 'cover', marginBottom: '1rem', border: '3px solid var(--primary-blue)' }} onError={(e) => { e.target.src = 'https://via.placeholder.com/100/e0f2fe/005A9C?text=W'; }} />
+            <h3 style={{ margin: '0 0 0.5rem 0', fontSize: '1.1rem', textAlign: 'center', justifyContent: 'center' }}>Wendel</h3>
+            <a href="https://github.com/Wendel-Brasiliano" target="_blank" rel="noreferrer" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', textDecoration: 'none', color: 'var(--text-secondary)', fontSize: '0.9rem' }}>
+              <Github size={16} /> @Wendel-Brasiliano
+            </a>
+          </div>
+
+          <div className="feature-card" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '1.5rem', width: '200px' }}>
+            <img src="./morgana.jpg" alt="Morgana" style={{ width: '100px', height: '100px', borderRadius: '50%', objectFit: 'cover', marginBottom: '1rem', border: '3px solid var(--primary-blue)' }} onError={(e) => { e.target.src = 'https://via.placeholder.com/100/e0f2fe/005A9C?text=Mo'; }} />
+            <h3 style={{ margin: '0 0 0.5rem 0', fontSize: '1.1rem', textAlign: 'center', justifyContent: 'center' }}>Morgana</h3>
+            <a href="https://github.com/Morganabarbs" target="_blank" rel="noreferrer" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', textDecoration: 'none', color: 'var(--text-secondary)', fontSize: '0.9rem' }}>
+              <Github size={16} /> @Morganabarbs
+            </a>
+          </div>
+
+          <div className="feature-card" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '1.5rem', width: '200px' }}>
+            <img src="./gabriel.png" alt="Gabriel" style={{ width: '100px', height: '100px', borderRadius: '50%', objectFit: 'cover', marginBottom: '1rem', border: '3px solid var(--accent-orange)' }} onError={(e) => { e.target.src = 'https://via.placeholder.com/100/e0f2fe/F28C28?text=G'; }} />
+            <h3 style={{ margin: '0 0 0.5rem 0', fontSize: '1.1rem', textAlign: 'center', justifyContent: 'center' }}>Gabriel</h3>
+            <a href="https://github.com/gabrielfranca42" target="_blank" rel="noreferrer" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', textDecoration: 'none', color: 'var(--text-secondary)', fontSize: '0.9rem' }}>
+              <Github size={16} /> @gabrielfranca42
+            </a>
+          </div>
+
         </div>
       </div>
     )
