@@ -292,6 +292,14 @@ const getSlides = (openLightbox) => [
             </span>
           </a>
 
+          <a href="https://github.com/Benzo171" target="_blank" rel="noreferrer" className="feature-card" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '1.5rem', width: '200px', textDecoration: 'none' }}>
+            <img src="./benzo.jpg" alt="Benzo" style={{ width: '100px', height: '100px', borderRadius: '50%', objectFit: 'cover', marginBottom: '1rem', border: '3px solid var(--primary-blue)' }} onError={(e) => { e.target.src = 'https://github.com/Benzo171.png'; }} />
+            <h3 style={{ margin: '0 0 0.5rem 0', fontSize: '1.1rem', textAlign: 'center', justifyContent: 'center', color: 'var(--text-primary)' }}>Benzo</h3>
+            <span style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-secondary)', fontSize: '0.9rem' }}>
+              <Github size={16} /> @Benzo171
+            </span>
+          </a>
+
         </div>
       </div>
     )
