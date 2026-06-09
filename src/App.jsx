@@ -206,10 +206,10 @@ const getSlides = (openLightbox) => [
     content: (
       <div className="slide-content" style={{ alignItems: 'center', justifyContent: 'center', textAlign: 'center' }}>
         <h2 className="slide-title animate-item delay-1" style={{ border: 'none', justifyContent: 'center', paddingBottom: 0 }}>Resultados Esperados</h2>
-        <p className="slide-subtitle animate-item delay-2" style={{ marginBottom: '3rem' }}>O impacto do ValidaUP no Senac</p>
+        <p className="slide-subtitle animate-item delay-2" style={{ marginBottom: '2rem' }}>O impacto do ValidaUP no Senac</p>
         
-        <div className="features-grid" style={{ width: '100%', maxWidth: '1000px', gap: '2rem' }}>
-          <div className="feature-card animate-item delay-3" style={{ textAlign: 'center', padding: '3rem 2rem' }}>
+        <div className="features-grid" style={{ width: '100%', maxWidth: '1000px', gap: '1.5rem' }}>
+          <div className="feature-card animate-item delay-3" style={{ textAlign: 'center', padding: '2rem 1.5rem' }}>
             <div style={{ background: 'var(--primary-blue-light)', width: '64px', height: '64px', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 1.5rem' }}>
               <Clock color="var(--primary-blue)" size={28} />
             </div>
@@ -217,7 +217,7 @@ const getSlides = (openLightbox) => [
             <p>Redução drástica no tempo de triagem e processamento de horas.</p>
           </div>
           
-          <div className="feature-card animate-item delay-4" style={{ textAlign: 'center', padding: '3rem 2rem' }}>
+          <div className="feature-card animate-item delay-4" style={{ textAlign: 'center', padding: '2rem 1.5rem' }}>
             <div style={{ background: 'var(--primary-blue-light)', width: '64px', height: '64px', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 1.5rem' }}>
               <CheckCircle color="var(--primary-blue)" size={28} />
             </div>
@@ -225,7 +225,7 @@ const getSlides = (openLightbox) => [
             <p>O aluno nunca fica no escuro, sabe exatamente o motivo de cada aprovação ou rejeição.</p>
           </div>
           
-          <div className="feature-card animate-item delay-5" style={{ textAlign: 'center', padding: '3rem 2rem' }}>
+          <div className="feature-card animate-item delay-5" style={{ textAlign: 'center', padding: '2rem 1.5rem' }}>
             <div style={{ background: 'var(--primary-blue-light)', width: '64px', height: '64px', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 1.5rem' }}>
               <ShieldCheck color="var(--primary-blue)" size={28} />
             </div>
@@ -234,7 +234,7 @@ const getSlides = (openLightbox) => [
           </div>
         </div>
         
-        <div className="animate-item delay-6" style={{ marginTop: '3rem' }}>
+        <div className="animate-item delay-6" style={{ marginTop: '2rem' }}>
             <h2 style={{ fontSize: '2.5rem', color: 'var(--primary-blue-dark)' }}>Obrigado!</h2>
             <p style={{ color: 'var(--text-secondary)' }}>ValidaUP - Senac 2026</p>
         </div>
