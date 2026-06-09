@@ -173,12 +173,13 @@ const getSlides = (openLightbox) => [
         </div>
 
         <div className="split-layout" style={{ gridTemplateColumns: '0.9fr 1.1fr' }}>
-          <div className="slide-image-container animate-item delay-2" style={{ maxHeight: '100%', height: '400px', background: '#f8fafc', padding: '2rem' }}>
-            <div style={{ width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', background: '#ffffff', borderRadius: '16px', boxShadow: 'var(--shadow-sm)', border: '1px solid var(--border-color)' }}>
-               <Users size={64} color="var(--primary-blue)" strokeWidth={1.5} style={{ marginBottom: '1rem' }} />
-               <h3 style={{ color: 'var(--text-primary)', fontSize: '1.5rem' }}>Fila de Análise</h3>
-               <p style={{ color: 'var(--text-secondary)', marginTop: '0.5rem', textAlign: 'center' }}>Auditoria de formulários submetidos</p>
-            </div>
+          <div className="slide-image-container animate-item delay-2" onClick={() => openLightbox(4)} style={{ maxHeight: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer' }}>
+            <img 
+              src="./admin-panel.png" 
+              alt="Painel do Coordenador" 
+              style={{ maxWidth: '100%', maxHeight: '400px', borderRadius: '8px', boxShadow: '0 4px 15px rgba(0,0,0,0.1)', objectFit: 'contain' }} 
+              onError={(e) => { e.target.src = 'https://via.placeholder.com/600x400/e0f2fe/005A9C?text=Painel+Coordenador'; }}
+            />
           </div>
           <div>
             <p className="slide-text animate-item delay-3" style={{ marginBottom: '2.5rem' }}>
@@ -314,7 +315,8 @@ function App() {
     { src: './login.jpg', alt: 'Login do App', fallback: 'https://via.placeholder.com/300x600/e0f2fe/005A9C?text=Login' },
     { src: './painel.jpg', alt: 'Painel do App', fallback: 'https://via.placeholder.com/300x600/e0f2fe/005A9C?text=Painel' },
     { src: './subir.jpg', alt: 'Upload no App', fallback: 'https://via.placeholder.com/300x600/e0f2fe/005A9C?text=Upload' },
-    { src: './perfil.jpg', alt: 'Perfil do App', fallback: 'https://via.placeholder.com/300x600/e0f2fe/005A9C?text=Perfil' }
+    { src: './perfil.jpg', alt: 'Perfil do App', fallback: 'https://via.placeholder.com/300x600/e0f2fe/005A9C?text=Perfil' },
+    { src: './admin-panel.png', alt: 'Painel de Administração', fallback: 'https://via.placeholder.com/600x400/e0f2fe/005A9C?text=Painel' }
   ];
 
   const slides = getSlides(setLightboxIndex);
